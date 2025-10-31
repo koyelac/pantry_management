@@ -1,0 +1,12 @@
+name,expiry_dt,status,storage
+chocolate,02-11-2025,flagged,fridge
+yogurt,12-01-2026,open,fridge
+ketchup,12-01-2026,open,fridge
+harissa,12-01-2026,open,fridge
+chips,12-01-2026,open,fridge
+pointed gourd,07-11-2025,open,counter
+lays,12-01-2026,open,fridge
+pasta,12-01-2026,open,fridge
+blueberry,01-11-2025,flagged,counter
+cucumber,01-11-2025,flagged,counter
+celery,03-11-2025,open,fridge
