@@ -36,9 +36,9 @@ def fresh_stocks_format(json_data :Dict):
                     storage = df_row["storage"].item()
                     print(f"Storage of {item['name']} is {storage}")
                 else:
-                    # Add two days as expiry by default if item not found in database
-                    print(f"Item not found, adding default day 2 and counter storage for grocery {item['name']}")
-                    exp = current_date + timedelta(days = 2)
+                    # Add three days as expiry by default if item not found in database
+                    print(f"Item not found, adding default day 3 and counter storage for grocery {item['name']}")
+                    exp = current_date + timedelta(days = 3)
                     storage = "counter"
                 nu_stock.loc[len(nu_stock)] = [item["name"], pd.to_datetime(exp).strftime("%d-%m-%Y"), "open", storage]
                 print("New grocery item added while preparing sheet")
@@ -149,3 +149,4 @@ if __name__ == "__main__":
                         
                         
                         
+
