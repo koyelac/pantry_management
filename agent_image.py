@@ -50,6 +50,18 @@ class GeminiReceiptProcessor:
         date, then the full date or the month that comes later than the other
         is going to be the expiry date. 
         5. Ignore all the non food items in the image.
+        GUIDELINES
+        1. For packaged items carefully check for dates. There might not be
+        mfg or exp specifically mentioned or might not even printed beside
+        For Example You might find two dates like Jan24/July29, then extract
+        mfg_date as 01-01-2024 and expiry_date as 01-07-2029. Some items have
+        just month and year as mfg and expiry. If you find a 2 digit number beside
+        a month, that is the year of manufacture. So for any month say MON followed
+        by two numbers say XX, convert that to 01-MON(converted to numeric)-20XX
+        2. For packaged items if you see a date like 02/2027 the 02 stands for
+        month and 2027 for year. By default get the day as 01. So for this example
+        the date will be 01-02-2025. Most of the times, the expiry and
+        mfg will have just month and year. There might not be a complete date.
         RESPONSE FORMAT:
         Return a JSON object with this exact structure:
         {

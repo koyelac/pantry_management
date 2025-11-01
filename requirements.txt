@@ -1,0 +1,43 @@
+# Web Framework
+Flask==3.0.0
+Werkzeug==3.0.1
+
+# Data Processing
+pandas==2.1.4
+numpy==1.26.2
+
+# HTTP Requests
+requests==2.31.0
+
+# Date/Time Utilities
+python-dateutil==2.8.2
+
+# Task Scheduling
+schedule==1.2.0
+
+# Environment Variables
+python-dotenv==1.0.0
+
+# Twilio for WhatsApp Integration
+twilio==8.11.0
+
+# Google Generative AI (Gemini)
+google-generativeai==0.3.2
+
+# Image Processing
+Pillow==10.1.0
+
+# Async Support
+asyncio
+
+# Standard Library (included with Python)
+# json
+# datetime
+# time
+# os
+# io
+# typing
+# dataclasses
+# csv
+# math
+# logging
